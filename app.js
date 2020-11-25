@@ -113,9 +113,9 @@ app.get("/", function (req, res) {
   res.render("home", {isAuthenticated: isAuthenticated});
 });
 
-app.get("/about", function (req, res) {
-  res.render("about");
-});
+// app.get("/about", function (req, res) {
+//   res.render("about");
+// });
 
 app.get('/formdownload',(req,res)=>{  
     var path= __dirname + '/' + req.query.download;  

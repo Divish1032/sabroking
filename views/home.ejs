@@ -26,8 +26,6 @@ html{
 
 .about-heading{
   color: #404040;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 .contact-form{  
   background-color: #282828;
@@ -63,7 +61,7 @@ html{
           <a class="nav-link" style="color: white;" href="#home">Home</a>
         </li>
         <li class="nav-item navitem">
-          <a class="nav-link" style="color: white;" href="/about">About Us</a>
+          <a class="nav-link" style="color: white;" href="#about">About Us</a>
         </li>
         <li class="nav-item navitem">
           <a class="nav-link" style="color: white;" href="#" data-toggle="modal" data-target="#exampleModalCenterDownloads">Downloads</a>
@@ -80,18 +78,17 @@ html{
     </div>
   </nav>
 
-  <div id="about" style="background-color: gainsboro; padding: 50px; padding-top: 70px; padding-bottom: 20px;">
-
+  <div id="home" style="background-color: gainsboro; padding-top: 70px; padding-bottom: 20px;" class="container-fluid">
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="Images/first image.png" class="d-block w-100" alt="First Slide">
+          <img src="Images/first image.png" class="d-block" alt="First Slide" style="margin: auto; max-width: 100%; max-height: 100%;">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="Images/Great Advice.png" alt="Second slide">
+          <img class="d-block" src="Images/Great Advice.png" alt="Second slide" style="margin: auto;max-width: 100%; max-height: 100%;">
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="Images/bg.png" alt="Third slide">
+          <img class="d-block" src="Images/bg.png" alt="Third slide" style="margin: auto;max-width: 100%; max-height: 100%;">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -107,17 +104,41 @@ html{
 
   <marquee direction="left" height="25" bgcolor="white" style="color: #a20a0a;"><b>Clients are advised to upgrade their E-Mail ID and Mobile Numbers with the Firm.</b></marquee>
   
-  <div id="home" style="background-image: url('Images/back.jpg');background-size: cover;">
+  <!-- <div id="home" style="background-image: url('Images/back.jpg');background-size: cover;">
     <center class="center-content">
     <h2 class="display-4" style="margin-bottom: 40px;">SHARAD AGARWAL BROKING SERVICES PVT. LTD.</h2>
     <p>SEBI Registration No. NSE CM: INZ000265636, NSE F&O: INZ000265636</p>
     <p>Compliance Officer's Name : Susmita N Yadav, Email id: sabsmum@gmail.com, Telephone no: 022-2630 0588</p>
   </center>
-</div>
-<center style="margin-bottom: 40px;">
-  <a href="#contact"><button type="button" class="btn btn-primary btn-lg" style="margin-top: 40px" >Get in touch with us</button></a>
-</center>
+</div> -->
+<div id="about" style="padding: 50px;">
+  <div class="row" style="margin-bottom: 30px;">
+    
+    <div class="col-sm-3">
+      <h5 class="about-heading"><b>About The Firm</b></h5>
+    </div>
+    <div class="col-sm-9">
+      <p><i><u>M/S Sharad Agarwal Broking Services Pvt. Ltd.</u></i> was started as <u><i>Sharad Agarwal & Co.</i></u> in July 1989 as a member of Calcutta Stock Exchange. The trading membership of National Stock Exchange was acquired in August 1995. The core strength of the firm lies in excellent market information and research based on specific companies. Over the years, we have won the trust and confidence of our clients by hard work and excellent customer services.</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3">
+      <h5 class="about-heading"><b>Management Team</b></h5>
+    </div>
+    <div class="col-sm-9">
+      <h6 class="about-heading"><b>Mr. Sharad Agarwal</b></h6>
+      <p>He is the one of the Directors of the Company and he started as an authorized assistant with M/S Lath & Co., members of The Calcutta Stock Exchange from 1987 to 1989. In 1989 started his own firm by becoming member of the Calcutta Stock Exchange Association Limited. His main thrust was on institutional business and within a short span the firm was empaneled with all the leading financial institutions and mutual funds in India. He is stationed in Mumbai and takes care of the Institutional business.</p>
+      
+      <h6 class="about-heading"><b>Mrs. Manisha Agarwal</b></h6>
+      <p>She is one of the directors of the company. She is a graduate from Delhi University and has an experience of 15 years in the Capital Market.</p>
+
+      <h6 class="about-heading"><b>Mr. Anurag Agarwal</b></h6>
+      <p>He is research advisor for the auto sector. He completed his Bachelors in Mechanical Engineering from Manipal Institute of Technology and Masters from University of Virginia, USA with specialization in electric vehicles.</p>
+    </div>
   
+  </div>
+</div>
   <div class="contact-form" id="contact">
     <div class="address-info">
     <center>
