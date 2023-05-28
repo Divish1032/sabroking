@@ -24,6 +24,10 @@ html{
   padding-bottom: 50px;
 }
 
+table, th, td {
+  border: 1px solid;
+}
+
 .about-heading{
   color: #404040;
 }
@@ -31,6 +35,10 @@ html{
   background-color: #282828;
   /* margin-left: 300px;
   margin-right: 300px; */
+}
+
+th, td {
+  padding: 15px;
 }
 
 .textfield{ 
@@ -85,6 +93,9 @@ html{
             <a class="nav-link" style="color: white;" href="#" data-toggle="modal" data-target="#exampleModalCenterLogin">Client Login</a>
           </li>
         <% } %>
+        <li class="nav-item navitem">
+          <a class="nav-link" style="color: white;" href="#investor-corner" >Investor Corner</a>
+        </li>
       </ul>
     </div>
   </nav>
@@ -152,6 +163,7 @@ html{
           
           </div>
         </div>
+      
       </div>
     </div>
 
@@ -204,6 +216,102 @@ html{
    
   </center>
   </div>
+
+  <div id="investor-corner" style="padding: 30px;">
+          <div class="row" style="margin-bottom: 30px;">
+            
+            <div class="col-12">
+              <h2 ><b>Investor Corner</b></h2>
+            </div>
+            <!-- <div class="col-sm-6">
+                  
+              <button class="btn btn-primary btn-lg btn-group mr-2"  data-toggle="modal" data-target="#exampleModalCenterDownloads2">Investor Grievance Matrix</button> -->
+          <!-- <a class="nav-link" style="color: black;" href="#" data-toggle="modal" data-target="#exampleModalCenterLogin1">Downloads</a> -->
+
+            <!-- </div> -->
+          </div>
+          <h5> Investor Grievance Escalation Matix</h5>
+          <table>
+            <tr>
+              <td>Details of</td>
+              <td>Contact Person</td>
+              <td>Address</td>
+              <td>Contact No.</td>
+              <td>Email id</td>
+            </tr>
+            <tr>
+              <td>Customer Care</td>
+              <td>Minakshi Yadav</td>
+              <td>C-202 Remi Bizcourt, Shah Industrial Estate, Andheri West, Mumbai - 400053</td>
+              <td>26730230</td>
+              <td>sabsmum@gmail.com</td>
+            </tr>
+            <tr>
+              <td>Compliance Officer</td>
+              <td>Susmita Yadav</td>
+              <td>C-202 Remi Bizcourt, Shah Industrial Estate, Andheri West, Mumbai - 400053</td>
+              <td>62399870</td>
+              <td>sabsmum@gmail.com</td>
+            </tr>
+            <tr>
+              <td>CEO</td>
+              <td>Sharad Agarwal</td>
+              <td>C-202 Remi Bizcourt, Shah Industrial Estate, Andheri West, Mumbai - 400053</td>
+              <td>62399870</td>
+              <td>sabsmum@gmail.com</td>
+            </tr>
+          
+          </table>
+
+                    <h5 style="margin-top: 24px;"> Names and contact details of all Key Managerial Personnel including the Compliance Officer-  </h5>
+                    <table>
+                      <tr>
+                        <td>Name of the Individual </td>
+                        <td>Designation</td>
+                        <td>Mobile Number </td>
+                        <td>Email id</td>
+                      </tr>
+                      <tr>
+                        <td>Susmita Yadav</td>
+                        <td>Compliance Officer</td>
+                        <td>9987223628</td>
+                        <td>sabsmum@gmailo.com</td>
+                      </tr>
+
+                     <tr>
+                        <td>Sharad Agarwal</td>
+                      <td>CEO</td>
+                      <td>9987223628</td>
+                      <td>sabsmum@gmailo.com</td>
+                     </tr>
+                      
+                    </table>
+
+                    <h5 style="margin-top: 24px;">Steps for Opening an Account</h5>
+                    <p>Account can be opened by filing up the KYC form as prescribed by SEBI</p>
+                    <p>Form can be collected from our Registered office from 10 AM to 1PM</p>
+
+                    <h5 style="margin-top: 24px;">Procedure for filing Complaint</h5>
+                    <p>A compalint can be filed by an investor by sending a mail to our Investor Grievance ID sabspl.ig@gmail.com</p>
+                    <p>A confirmation mail will be sent to them.</p>
+                    <p>Status of the complain can be obtained from Compliance Officer at 62399870.</p>
+
+            <h5 style="margin-top: 24px;">Details of Client Bank Accounts</h5>
+            <p>Name of Bank: Axis Bank Ltd</p>
+            <p>Account No: 004010200842655
+</p>
+      <p>IFSC Code: UTIB0000004
+</p>
+
+<h5>Important Links & Files</h5>
+<p>1.  <a href="https://scores.gov.in/scores/Welcome.html">https://scores.gov.in/scores/Welcome.html</a></p>
+<p>2.  <a href="https://www.evoting.nsdl.com/">https://www.evoting.nsdl.com/</a></p>
+<p>3.  <a href="https://evoting.cdslindia.com/Evoting/EvotingLogin">https://evoting.cdslindia.com/Evoting/EvotingLogin</a></p>
+<a>  <form action="/formdownload" method="GET">  
+       4. <button type="submit" name="download" value="forms/investor_charter.pdf" style="background: none; color: #0056b3;  margin:0; padding:0; box-shadow: none; border-width: 0;">Investor Charter PDF</button>
+      </form></a>
+        </div>
+
 
   <!-- Login Modal -->
   <div class="modal fade" id="exampleModalCenterLogin" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
@@ -294,7 +402,6 @@ html{
     </div>
     </div>
   </div>
-  
 
   <script>
    window.addEventListener( "pageshow", function ( event ) {
