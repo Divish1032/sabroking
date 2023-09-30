@@ -41,10 +41,6 @@ const mongoURI = "mongodb+srv://vaibhav412:v12345a@cluster0.if63g.mongodb.net/sa
 // const url = "mongodb://<username>:<password>@main-shard-00-00-03xkr.mongodb.net:27017,main-shard-00-01-03xkr.mongodb.net:27017,main-shard-00-02-03xkr.mongodb.net:27017/main?ssl=true&replicaSet=Main-shard-0&authSource=admin&retryWrites=true";
 
 const options = {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-  useCreateIndex: true,
-  useFindAndModify: false,
   autoIndex: false, // Don't build indexes
   poolSize: 10, // Maintain up to 10 socket connections
   serverSelectionTimeoutMS: 5000, // Keep trying to send operations for 5 seconds
@@ -54,11 +50,7 @@ const options = {
 
 mongoose.connect(mongoURI, options);
 
-mongoose.set("useCreateIndex", true);
-
 const conn = mongoose.createConnection(mongoURI, options);
-
-mongoose.set("useUnifiedTopology", true);
 
 // Init gfs
 let gfs;
