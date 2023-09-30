@@ -38,6 +38,8 @@ app.use(passport.session());
 
 const mongoURI = "mongodb+srv://vaibhav412:v12345a@cluster0.if63g.mongodb.net/sabrokingDB";
 
+// const url = "mongodb://<username>:<password>@main-shard-00-00-03xkr.mongodb.net:27017,main-shard-00-01-03xkr.mongodb.net:27017,main-shard-00-02-03xkr.mongodb.net:27017/main?ssl=true&replicaSet=Main-shard-0&authSource=admin&retryWrites=true";
+
 const options = {
   useNewUrlParser: true,
   useUnifiedTopology: true,
