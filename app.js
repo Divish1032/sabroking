@@ -11,7 +11,7 @@ var fs = require("fs");
 var path = require("path");
 var multer = require("multer");
 
-const GridFsStorage = require("multer-gridfs-storage");
+const GridFsStorage = require("multer-gridfs-storage").GridFsStorage;
 const Grid = require("gridfs-stream");
 const methodOverride = require("method-override");
 
